@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Web Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/role" method ="POST" class="role_form" style="text-align: center; width: 420px;">
+        <div class="h2-div">
+            <h2 class="h2-tag">Role</h2>
+        </div>
+
+        <div class="div-inp">
+            <label for="rolee"><b>Role :</b></label>
+            <input type="text" name="role" id="rolee" class="inp-style" placeholder="enter your role e.g; teacher/student" required>
+        </div>
+
+        <div class="btn-div">
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
