@@ -21,7 +21,7 @@ teachers = {
     'teach_1' : {
         'Name' : 'Vaishali',
         'ID' : 77,
-        'Mob' : '8147895465',
+        'Mob' : '81XXXXXXXX',
         'Address' : 'Haridwar',
         'Teach_subject' : 'Python'
     }
