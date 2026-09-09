@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Web Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div style="width: 350px;max-height: 350px;padding: 10px; margin: auto; margin-top: 20px; text-align: center;">
+        {% with messages = get_flashed_messages() %}
+
+            {% if messages %}
+
+                {% for message in messages %}
+
+                    <p>{{ message }}</p>
+                
+                {% endfor %}
+
+            {% endif %}
+        
+        {% endwith %}       
+    </div>
+    <form action="/teacher" method ="POST" class="role_form" style="height: 350px; max-width: 450px; margin-top: 5px;">
+        <div class="h2-div">
+            <h2 class="h2-tag">Teacher Form</h2>
+        </div>
+
+        <div class="div-inp">
+            <label for="id"><b>Teacher ID :</b></label>
+            <input type="number" name="teacherID" id="id" class="inp-style" placeholder="enter your id" required>
+        </div>
+
+        <div class="div-inp">
+            <label for="pd"><b>Teacher Password :</b></label>
+            <input type="password" name="teacherPWD" id="pd" class="inp-style" placeholder="enter your password" required>
+        </div>
+
+        <div class="btn-div">
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
