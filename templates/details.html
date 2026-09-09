@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Web Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% if student %}
+        <div class="role_form" style="max-width: 470px;">
+            <div style="text-align: center; width: 400px; margin-left: 25px; height: 55px;">
+                <h2 style="padding-top: 0px; margin-top: 13px;">Welcome {{ student['Name'] }}</h2>
+            </div>
+
+            <div style="margin-top: 10px; text-align: center;">
+                <p style="padding-bottom: 10px;">Name :{{ student['Name'] }} </p>
+                <p style="padding-bottom: 10px;">ID :{{ student['ID'] }}</p>
+                <p>Course :{{ student['Course'] }}</p>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if teacher %}
+        <div class="role_form" style="max-width: 470px; height: 300px;">
+            <div style="text-align: center; width: 400px; margin-left: 25px; height: 55px;">
+                <h2 style="padding-top: 0px; margin-top: 13px;">Welcome {{ teacher['Name'] }}</h2>
+            </div>
+
+            <div style="margin-top: 10px; text-align: center;">
+                <p style="padding-bottom: 10px;">Name :{{ teacher['Name'] }} </p>
+                <p style="padding-bottom: 10px;">ID :{{ teacher['ID'] }}</p>
+                <p>Mob :{{ teacher['Mob'] }}</p>
+                <p>Address :{{ teacher['Address'] }}</p>
+                <p>Teach_subject :{{ teacher['Teach_subject'] }}</p>
+            </div>
+        </div>
+    {% endif %}
+</body>
+</html>
