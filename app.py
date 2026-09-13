@@ -7,13 +7,15 @@ students = {
     'pbka123' : {
         'Name' : 'Vansh Tyagi',
         'ID' : 101,
-        'Course' : 'B.Tech AI & ML' 
+        'Course' : 'B.Tech AI & ML',
+        'image' : 'student_images/vansh.jpeg'
     },
 
     'payal123' : {
         'Name' : 'Payal Tyagi',
         'ID' : 102,
-        'Course' : 'MCA'
+        'Course' : 'MCA',
+        'image' : 'student_images/payal.jpeg'
     }
 }
 
@@ -23,7 +25,8 @@ teachers = {
         'ID' : 77,
         'Mob' : '81XXXXXXXX',
         'Address' : 'Haridwar',
-        'Teach_subject' : 'Python'
+        'Teach_subject' : 'Python',
+        'image' : 'teacher_images/teach1.jpeg'
     }
 }
 
