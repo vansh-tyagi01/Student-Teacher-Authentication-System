@@ -8,7 +8,8 @@ body {
     border: 1px solid;
     height: 250px;
     max-width: 550px;
-    max-height: 400px;
+    min-height: 350px;
+    height: auto;
     border-radius: 12px;
     background-color: white;
     margin: auto;
@@ -65,4 +66,11 @@ label {
     border-radius: 12px;
     font-weight: bold;
     cursor: pointer;
+}
+img {
+    border: 1px solid;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
